@@ -29,9 +29,10 @@
 
 2. Warunki:
 	zatwierdzony approval
-	images
+	
+	![image](/images/conditionApproval.png)
 
-	Dodanie wartości w Compose jak dana wartość jest zaznaczona (true/false):
+	Warunek sprawdzający kolumne(true/false), jeżeli wartość jest true dodaje tekst, jezeli false to nic nie dodaje (przydatne np do wniosków i innych plików typu PDF)
 	`if(equals(triggerOutputs()?['body/NazwaKolumnyZSharepoint'],true),'tekst ktory ma sie wyswietlic','')`
 
 3. Formatowie dat:
