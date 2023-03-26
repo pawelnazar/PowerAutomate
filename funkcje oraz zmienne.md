@@ -44,4 +44,4 @@
 
 	`formatDateTime(triggerOutputs()?['body/Datarozpoczecia'], 'dd-MM-yyyy')`
 
-	(więcej tutaj)[https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings]
+	[więcej tutaj](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
