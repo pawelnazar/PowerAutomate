@@ -36,5 +36,12 @@
 	`if(equals(triggerOutputs()?['body/NazwaKolumnyZSharepoint'],true),'tekst ktory ma sie wyswietlic','')`
 
 3. Formatowie dat:
+	dd - dzień (np. 11)
+	MM - miesiąc (np. 03)
+	yyyy - pełny rok (np. 2022)
+	hh - godzina (np. 21)
+	mm - minuta (np. 37)
+
 	`formatDateTime(triggerOutputs()?['body/Datarozpoczecia'], 'dd-MM-yyyy')`
 
+	(więcej tutaj)[https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings]
