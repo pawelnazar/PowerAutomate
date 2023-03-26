@@ -21,26 +21,26 @@
 			],
 	```
 
-	Imię i nazwisko zatwierdzającego:
+	- Imię i nazwisko zatwierdzającego:
 	`body('Uruchom_i_czekaj_na_zatwierdzenie')['responses'][0]?['responder']?['displayName']`
 
-	Data zatwierdzenia:
+	- Data zatwierdzenia:
 	`body('Uruchom_i_czekaj_na_zatwierdzenie')['responses'][0]?['responseDate']`
 
 2. Warunki:
-	zatwierdzony approval
+	- zatwierdzony approval
 	
 	![image](/images/conditionApproval.png)
 
-	Warunek sprawdzający kolumne(true/false), jeżeli wartość jest true dodaje tekst, jezeli false to nic nie dodaje (przydatne np do wniosków i innych plików typu PDF)
+	- Warunek sprawdzający kolumne(true/false), jeżeli wartość jest true dodaje tekst, jezeli false to nic nie dodaje (przydatne np do wniosków i innych plików typu PDF)
 	`if(equals(triggerOutputs()?['body/NazwaKolumnyZSharepoint'],true),'tekst ktory ma sie wyswietlic','')`
 
-3. Formatowie dat:
-	dd - dzień (np. 11)
-	MM - miesiąc (np. 03)
-	yyyy - pełny rok (np. 2022)
-	hh - godzina (np. 21)
-	mm - minuta (np. 37)
+3. Formatowie dat: 
+	- dd - dzień (np. 11)
+	- MM - miesiąc (np. 03)
+	- yyyy - pełny rok (np. 2022)
+	- hh - godzina (np. 21)
+	- mm - minuta (np. 37)
 
 	`formatDateTime(triggerOutputs()?['body/Datarozpoczecia'], 'dd-MM-yyyy')`
 
